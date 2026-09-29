@@ -37,7 +37,7 @@ Beispiel: Ruf der Pager-/Gruppen-ID `146` bei System-ID `1`:
 FE 9A 05 00 01 00 92 80 18 69
 ```
 
-Die vollständige Beschreibung steht in [docs/PROTOCOL.md](docs/PROTOCOL.md). Der jeweilige Nachweisstand steht in [docs/STATUS.md](docs/STATUS.md).
+Die Dokumentation ist unter [docs/README.md](docs/README.md) zusammengefasst. Dort sind die vollständige [Protokollreferenz](docs/protocol.md) und der [Nachweis-/Teststand](docs/verification.md) verlinkt.
 
 ## Nachweis-Kategorien
 
