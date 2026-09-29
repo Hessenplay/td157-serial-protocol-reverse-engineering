@@ -37,3 +37,11 @@ Recommended notice:
 > Retekess and TD157/TD157A are trademarks or product identifiers of their respective owners. They are used here solely to identify the product for interoperability purposes. This project is unofficial and is not affiliated with, endorsed by, sponsored by, or maintained by Retekess.
 
 Avoid repository branding that could imply an official Retekess project.
+
+## Licensing scope
+
+Original project documentation, protocol specifications, protocol data and project-generated captures are licensed under **CC BY 4.0**.
+
+Original software source code, scripts, examples and tools are licensed under the **MIT License**.
+
+See the repository's [LICENSE](../LICENSE) file for the exact scope. These licenses apply only to material for which the project contributors have the right to grant a license. They do not relicense third-party Retekess software, manuals, trademarks, graphics or other proprietary material.
