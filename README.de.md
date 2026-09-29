@@ -69,4 +69,9 @@ Dieses Projekt ist inoffiziell und steht **in keiner Verbindung zu Retekess und 
 
 ## Lizenz
 
-MIT, siehe [LICENSE](LICENSE).
+Dieses Repository verwendet zwei Lizenzen, abhängig vom Inhalt:
+
+- Dokumentation, Protokollspezifikation, Protokolldaten und projekterzeugte Mitschnitte: **CC BY 4.0**;
+- Software-Quellcode, Skripte, Beispiele und Tools: **MIT**.
+
+Die genaue Zuordnung steht in [LICENSE](LICENSE), die einzelnen Lizenzhinweise liegen unter [LICENSES/](LICENSES/).
