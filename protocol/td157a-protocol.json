@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "product": "Retekess TD157A",
+  "project_status": "unofficial interoperability research",
+  "serial": {
+    "baud": 9600,
+    "data_bits": 8,
+    "stop_bits": 1,
+    "parity": "none",
+    "flow_control": "none",
+    "rts": true,
+    "evidence": [
+      "RE",
+      "HW"
+    ]
+  },
+  "frame": {
+    "prefix_hex": "FE9A",
+    "suffix_hex": "69",
+    "length_bytes": 1,
+    "checksum": "(LEN + sum(DATA)) & 0xFF",
+    "id_endianness": "big-endian",
+    "evidence": [
+      "RE",
+      "project-use"
+    ]
+  },
+  "commands": {
+    "direct_call": {
+      "len": 5,
+      "data": "SYS_H SYS_L TARGET_H TARGET_L 80",
+      "target_range": [
+        1,
+        997
+      ],
+      "evidence": [
+        "RE",
+        "project-use"
+      ]
+    },
+    "program_pair": {
+      "len": 5,
+      "data": "SYS_H SYS_L TARGET_H TARGET_L 20",
+      "target_range": [
+        1,
+        998
+      ],
+      "evidence": [
+        "MANUAL",
+        "RE",
+        "HW"
+      ]
+    },
+    "call_all": {
+      "len": 5,
+      "data": "SYS_H SYS_L 3F FF 10",
+      "evidence": [
+        "MANUAL-function",
+        "RE"
+      ],
+      "verification": "black-box capture requested"
+    },
+    "cancel_call_all": {
+      "len": 5,
+      "data": "SYS_H SYS_L 3F FF 40",
+      "evidence": [
+        "MANUAL-function",
+        "RE"
+      ],
+      "verification": "black-box capture requested"
+    },
+    "cancel_pairing": {
+      "len": 5,
+      "data": "SYS_H SYS_L 00 00 48",
+      "evidence": [
+        "RE"
+      ],
+      "verification": "black-box capture requested"
+    },
+    "settings": {
+      "len": 9,
+      "data": "SYS_H SYS_L BUZZER RESPONSE VIB LIGHT BOUNDARY HOST_VIB HOST_BUZZ",
+      "evidence": [
+        "MANUAL-setting-names",
+        "RE"
+      ],
+      "verification": "black-box capture requested"
+    }
+  },
+  "settings": {
+    "system_id": {
+      "range": [
+        1,
+        999
+      ]
+    },
+    "pager_buzzer": {
+      "values": {
+        "0": "off",
+        "1": "slow",
+        "2": "medium",
+        "3": "fast"
+      },
+      "vendor_default": 2
+    },
+    "pager_response_time_seconds": {
+      "range": [
+        0,
+        99
+      ],
+      "vendor_default": 60
+    },
+    "pager_vibration": {
+      "off_hex": "46",
+      "on_hex": "4E",
+      "vendor_default": true
+    },
+    "pager_light": {
+      "values": {
+        "0": "off",
+        "1": "slow flash",
+        "2": "medium flash",
+        "3": "fast flash",
+        "4": "breathing light"
+      },
+      "vendor_default": 2
+    },
+    "boundary_alarm_duration_minutes": {
+      "range": [
+        0,
+        30
+      ],
+      "vendor_default": 0
+    },
+    "host_vibration": {
+      "off_hex": "46",
+      "on_hex": "4E",
+      "vendor_default": true
+    },
+    "host_buzzer": {
+      "off_hex": "46",
+      "on_hex": "4E",
+      "vendor_default": true
+    }
+  },
+  "status_tokens": {
+    "accepted_hex": "AAAAAA",
+    "rejected_hex": "EEEEEE",
+    "unknown_status_hex": [
+      "555555",
+      "F2F2F2"
+    ],
+    "note": "AA indicates base acceptance, not confirmed RF delivery to a pager."
+  },
+  "not_confirmed": [
+    "USB power-off command",
+    "fixed 39-mode reminder table",
+    "countdown/overdue timer as TD157A USB setting",
+    "battery or charging-slot telemetry"
+  ]
+}
