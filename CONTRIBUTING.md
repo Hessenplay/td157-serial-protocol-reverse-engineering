@@ -26,3 +26,12 @@ Do not submit vendor binaries, decompiled code, extracted assemblies, or copyrig
 Unknown is better than guessed.
 
 If a status byte or setting cannot be explained confidently, document the raw observation and mark the interpretation `INFERRED` or `unknown`.
+
+## Licensing of contributions
+
+By contributing material to this repository, you agree that your contribution is made available under the license that applies to that type of material:
+
+- documentation, specifications, protocol data and project-generated captures: **CC BY 4.0**;
+- software source code, scripts, examples and tools: **MIT**.
+
+If a contribution intentionally needs a different license, discuss it before submitting it and mark the affected files explicitly.

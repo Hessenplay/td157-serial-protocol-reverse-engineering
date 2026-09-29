@@ -82,4 +82,9 @@ See [README.de.md](README.de.md).
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE).
+This repository uses a **dual-license structure by material type**:
+
+- documentation, protocol specifications, protocol data and project-generated captures: **CC BY 4.0**;
+- software source code, scripts, examples and tools: **MIT**.
+
+See [LICENSE](LICENSE) for the scope and the individual license notices in [LICENSES/](LICENSES/).

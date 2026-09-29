@@ -1,0 +1,22 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Max Wohlgemuth
+
+The documentation, protocol specifications, protocol data, research notes and
+project-generated captures covered by this repository's LICENSE file are
+licensed under the Creative Commons Attribution 4.0 International License.
+
+Canonical license URL:
+https://creativecommons.org/licenses/by/4.0/
+
+Legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+SPDX-License-Identifier: CC-BY-4.0
+
+Attribution should identify this project and its author and, where reasonably
+practicable, link to the repository. If you modify the licensed material,
+indicate that changes were made.
+
+This notice does not grant rights in third-party trademarks, proprietary
+vendor software, manuals or assets.
