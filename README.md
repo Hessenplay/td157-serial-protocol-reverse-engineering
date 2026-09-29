@@ -50,7 +50,7 @@ Example: direct call to pager/group ID `146` using system ID `1`:
 FE 9A 05 00 01 00 92 80 18 69
 ```
 
-See [docs/PROTOCOL.md](docs/PROTOCOL.md) for the protocol and [docs/STATUS.md](docs/STATUS.md) for the evidence level of each finding.
+See the [documentation index](docs/README.md), the complete [protocol reference](docs/protocol.md), and [verification status](docs/verification.md).
 
 ## Evidence labels
 
